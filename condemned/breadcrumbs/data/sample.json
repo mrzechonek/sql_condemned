@@ -1,0 +1,106 @@
+[
+   {
+      "fields" : {
+         "parent" : null,
+         "name" : "root"
+      },
+      "pk" : 1,
+      "model" : "breadcrumbs.section"
+   },
+   {
+      "pk" : 2,
+      "model" : "breadcrumbs.section",
+      "fields" : {
+         "name" : "1",
+         "parent" : 1
+      }
+   },
+   {
+      "pk" : 3,
+      "model" : "breadcrumbs.section",
+      "fields" : {
+         "name" : "2",
+         "parent" : 1
+      }
+   },
+   {
+      "model" : "breadcrumbs.section",
+      "pk" : 4,
+      "fields" : {
+         "name" : "3",
+         "parent" : 1
+      }
+   },
+   {
+      "fields" : {
+         "parent" : 2,
+         "name" : "1 a"
+      },
+      "pk" : 5,
+      "model" : "breadcrumbs.section"
+   },
+   {
+      "fields" : {
+         "name" : "1 b",
+         "parent" : 2
+      },
+      "model" : "breadcrumbs.section",
+      "pk" : 6
+   },
+   {
+      "fields" : {
+         "parent" : 2,
+         "name" : "1 c"
+      },
+      "pk" : 7,
+      "model" : "breadcrumbs.section"
+   },
+   {
+      "model" : "breadcrumbs.section",
+      "pk" : 8,
+      "fields" : {
+         "parent" : 3,
+         "name" : "2 a"
+      }
+   },
+   {
+      "fields" : {
+         "name" : "2 b",
+         "parent" : 3
+      },
+      "model" : "breadcrumbs.section",
+      "pk" : 9
+   },
+   {
+      "pk" : 10,
+      "model" : "breadcrumbs.section",
+      "fields" : {
+         "parent" : 3,
+         "name" : "2 c"
+      }
+   },
+   {
+      "fields" : {
+         "name" : "2 d",
+         "parent" : 3
+      },
+      "model" : "breadcrumbs.section",
+      "pk" : 11
+   },
+   {
+      "fields" : {
+         "parent" : 4,
+         "name" : "3 a"
+      },
+      "pk" : 12,
+      "model" : "breadcrumbs.section"
+   },
+   {
+      "model" : "breadcrumbs.section",
+      "pk" : 13,
+      "fields" : {
+         "parent" : 4,
+         "name" : "3 b"
+      }
+   }
+]

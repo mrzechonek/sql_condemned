@@ -18,3 +18,6 @@ class Grade(models.Model):
 
     def __unicode__(self):
         return u'{} for {} on {}'.format(self.grade, self.student.username, self.date)
+
+# User.objects.annotate(trend=LinearFit('grade__grade', 'grade__date')):
+

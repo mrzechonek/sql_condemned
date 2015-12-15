@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=64)),
-                ('parent', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='breadcrumbs.Section')),
+                ('parent', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='breadcrumbs.Section', null=True)),
             ],
             bases=(models.Model, reinvent.mixins.AdjacencyListMixin),
         ),

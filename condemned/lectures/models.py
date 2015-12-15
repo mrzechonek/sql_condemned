@@ -5,9 +5,14 @@ class BusyMonths(models.Model):
     least_busy_month = models.DateField()
     most_busy_month = models.DateField()
 
+    def __unicode__(self):
+        least_busy_month = self.least_busy_month.strftime('%b')
+        most_busy_month = self.most_busy_month.strftime('%b')
+        return "{} {} {}".format(self.building, least_busy_month, most_busy_month)
+
     class Meta:
         managed = False
-        db_table = 'university_busy_months'
+        db_table = 'lectures_busy_months'
         ordering = ('building',)
 
 class Room(models.Model):
